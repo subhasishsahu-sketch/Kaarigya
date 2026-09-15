@@ -1,0 +1,166 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --font-ui: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-editorial: 'Playfair Display', Georgia, serif;
+    --bg-natural: #F4F1ED;
+    --bg-surface: #FAF8F5;
+    --bg-secondary: #E8E4DD;
+    --bg-tertiary: #E2DED6;
+    --natural-moss: #5D634C;
+    --natural-moss-dark: #4A4F3C;
+    --natural-clay: #BC8E6D;
+    --natural-clay-dark: #A77756;
+    --natural-charcoal: #2C2E29;
+    --natural-muted: #73776A;
+    --natural-border: #DCD7CF;
+    --craft-success: #5D634C;
+    --craft-warning: #BC8E6D;
+    --craft-danger: #A25247;
+  }
+
+  body {
+    font-family: var(--font-ui);
+    background-color: #F4F1ED;
+    color: #2C2E29;
+  }
+
+  h1, h2, h3, .font-serif-editorial {
+    font-family: var(--font-editorial);
+  }
+}
+
+/* Custom Natural Tones design elements */
+.bg-natural-canvas {
+  background-color: #F4F1ED;
+}
+
+.bg-natural-surface {
+  background-color: #FAF8F5;
+}
+
+.bg-natural-card {
+  background-color: #FFFFFF;
+}
+
+.text-natural-moss {
+  color: #5D634C;
+}
+
+.text-natural-clay {
+  color: #BC8E6D;
+}
+
+.text-natural-charcoal {
+  color: #2C2E29;
+}
+
+.border-natural {
+  border-color: #DCD7CF;
+}
+
+.craft-border {
+  border: 1px solid #DCD7CF;
+}
+
+.craft-border-dashed {
+  border: 1px dashed #C5BEB2;
+}
+
+.craft-shadow-subtle {
+  box-shadow: 0 4px 24px -2px rgba(44, 46, 41, 0.04), 0 2px 8px -1px rgba(44, 46, 41, 0.02);
+}
+
+.craft-shadow-certificate {
+  box-shadow: 0 12px 36px -4px rgba(44, 46, 41, 0.07), 0 4px 12px -2px rgba(44, 46, 41, 0.03);
+}
+
+/* Authentic Paper grain & organic dot grid */
+.bg-parchment {
+  background-color: #FAF8F5;
+  background-image: radial-gradient(#E2DCD2 0.7px, transparent 0.7px);
+  background-size: 18px 18px;
+}
+
+/* Decorative artisan top accent with natural tones gradient */
+.border-artisan-top {
+  position: relative;
+}
+.border-artisan-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #5D634C, #BC8E6D, #5D634C, transparent);
+}
+
+/* Custom scrollbar matching natural tones */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F1ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CFC5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5D634C;
+}
+
+/* QR Scanner Animation */
+@keyframes scanline {
+  0% { transform: translateY(0%); opacity: 0.8; }
+  50% { transform: translateY(180px); opacity: 1; }
+  100% { transform: translateY(0%); opacity: 0.8; }
+}
+
+.animate-scan {
+  animation: scanline 2.5s ease-in-out infinite;
+}
+
+/* ========================================================================= */
+/* PRINT MEDIA OPTIMIZATIONS FOR CERTIFICATE OF AUTHENTICITY */
+/* ========================================================================= */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  body {
+    background-color: #FFFFFF !important;
+    color: #2C2E29 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide app navigation, headers, footers, banners, floating buttons in print */
+  header, 
+  nav, 
+  footer, 
+  .print\:hidden,
+  #demo-role-banner,
+  .toast-notification {
+    display: none !important;
+  }
+
+  /* When printing certificate, make it take full clean view */
+  #printable-certificate {
+    box-shadow: none !important;
+    border-width: 4px !important;
+    border-style: double !important;
+    border-color: #5D634C !important;
+    page-break-inside: avoid !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+}
+

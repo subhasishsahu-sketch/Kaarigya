@@ -1,0 +1,10 @@
+[
+  "ransac_inlier_ratio",
+  "reprojection_error",
+  "spatial_spread",
+  "avg_inlier_descriptor_distance",
+  "normalized_match_count",
+  "lbp_similarity",
+  "glcm_similarity",
+  "glcm_distance"
+]

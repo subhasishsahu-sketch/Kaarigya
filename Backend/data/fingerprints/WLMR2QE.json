@@ -1,0 +1,74 @@
+{
+  "product_id": "WLMR2QE",
+  "product_name": "Puri Palm Leaf Pattachitra Painting",
+  "manufacturer_id": "KALAKRITI_AUTH_MFG",
+  "category": "Palm Leaf Engraving",
+  "batch_number": "BATCH_2026_01",
+  "manufacturing_location": "Puri, Odisha",
+  "registration_timestamp": "2026-08-30T16:26:33.773081",
+  "feature_version": "2.0.0",
+  "preprocessing_version": "1.0.0",
+  "model_version": "2.0.0",
+  "manifest": {
+    "product_id": "WLMR2QE",
+    "product_name": "Puri Palm Leaf Pattachitra Painting",
+    "manufacturer_id": "KALAKRITI_AUTH_MFG",
+    "category": "Palm Leaf Engraving",
+    "batch_number": "BATCH_2026_01",
+    "manufacturing_location": "Puri, Odisha",
+    "registered_at": "2026-08-30T16:26:33.773081",
+    "fingerprint_summary": {
+      "num_keypoints": 146,
+      "feature_method": "ORB",
+      "roi_position": [
+        1312,
+        2048
+      ],
+      "roi_size": [
+        256,
+        256
+      ],
+      "roi_quality": 0.7225111098883022
+    }
+  },
+  "manifest_hash": "b8a342cb46c89c24e44c153555f66654339d0c05ffd8a2a7b697d494e946156b",
+  "rsa_signature": "5ef3614267a9af643630375ed299abd682e3f61e32a59e51963d35d0f744de45fada7981678b85d046ba3b58cd0bc2ae1d836565ea740b8917fb1127c8330d1098c91144796fff8a16768028a946fccc808f35e5a090027d580e90e9e9e4d7c027d0e446433da2d392b4a9945d30df8c301548f970ede7a5bc51177dc53b90dfd1fe3c1626559ff18075246e0f95af869afe7cbbe55ab04a78ea0b8152e798074c369ab851c0a0286f5c706b516743e10424fb4d9a3284aa97778a097f19329d824f79e5a95417be88672f94e4ced05287115b5eb35b41e7230916bf64353d63db4114381ea6aecb1324b395bea24fb2920e6f3ddab5372bbd68d5fe0beb33f4",
+  "roi_metadata": {
+    "position": [
+      1312,
+      2048
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "quality_score": 0.7225111098883022,
+    "sharpness": 199.03698970540427,
+    "contrast": 76.80733030232528,
+    "gradient_strength": 61.08094678209502,
+    "keypoint_count": 146,
+    "reflection_ratio": 0.054290771484375,
+    "is_valid": true
+  },
+  "registration_metadata": {
+    "registered_at": "2026-08-30T16:26:33.773081",
+    "source_images": [
+      "WLMR2QE_1788087383.jpg"
+    ],
+    "image_count": 1,
+    "fingerprint_file": "WLMR2QE_fingerprint.npz"
+  },
+  "fingerprint_summary": {
+    "num_keypoints": 146,
+    "feature_method": "ORB",
+    "roi_position": [
+      1312,
+      2048
+    ],
+    "roi_size": [
+      256,
+      256
+    ],
+    "roi_quality": 0.7225111098883022
+  }
+}

@@ -1,0 +1,1046 @@
+2026-08-21 18:14:07 [INFO] root: Starting Kalakriti training pipeline...
+2026-08-21 18:14:07 [INFO] root: Step 1/10: Loading images...
+2026-08-21 18:14:07 [INFO] root: Found 8 images in C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw
+2026-08-21 18:14:07 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_140321.jpg (3060x4080)
+2026-08-21 18:14:08 [INFO] src.image_loader: Inspection complete for 20260820_140321.jpg: GOOD
+2026-08-21 18:14:08 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_140321_inspection.jpg
+2026-08-21 18:14:08 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_140324.jpg (3060x4080)
+2026-08-21 18:14:08 [INFO] src.image_loader: Inspection complete for 20260820_140324.jpg: GOOD
+2026-08-21 18:14:08 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_140324_inspection.jpg
+2026-08-21 18:14:08 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_140327.jpg (3060x4080)
+2026-08-21 18:14:08 [INFO] src.image_loader: Inspection complete for 20260820_140327.jpg: GOOD
+2026-08-21 18:14:09 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_140327_inspection.jpg
+2026-08-21 18:14:09 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_185801.jpg (3060x4080)
+2026-08-21 18:14:09 [WARNING] src.image_loader: Low sharpness: blur_score=40.0 < 50.0
+2026-08-21 18:14:09 [INFO] src.image_loader: Inspection complete for 20260820_185801.jpg: FAIR
+2026-08-21 18:14:09 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_185801_inspection.jpg
+2026-08-21 18:14:09 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_185812.jpg (3060x4080)
+2026-08-21 18:14:09 [WARNING] src.image_loader: Low sharpness: blur_score=33.5 < 50.0
+2026-08-21 18:14:09 [INFO] src.image_loader: Inspection complete for 20260820_185812.jpg: FAIR
+2026-08-21 18:14:09 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_185812_inspection.jpg
+2026-08-21 18:14:09 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_185831.jpg (3060x4080)
+2026-08-21 18:14:09 [WARNING] src.image_loader: Low sharpness: blur_score=15.9 < 50.0
+2026-08-21 18:14:09 [INFO] src.image_loader: Inspection complete for 20260820_185831.jpg: FAIR
+2026-08-21 18:14:10 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_185831_inspection.jpg
+2026-08-21 18:14:10 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_185833.jpg (3060x4080)
+2026-08-21 18:14:10 [WARNING] src.image_loader: Low sharpness: blur_score=15.1 < 50.0
+2026-08-21 18:14:10 [INFO] src.image_loader: Inspection complete for 20260820_185833.jpg: FAIR
+2026-08-21 18:14:10 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_185833_inspection.jpg
+2026-08-21 18:14:10 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_185844.jpg (3060x4080)
+2026-08-21 18:14:10 [WARNING] src.image_loader: Low sharpness: blur_score=19.9 < 50.0
+2026-08-21 18:14:10 [INFO] src.image_loader: Inspection complete for 20260820_185844.jpg: FAIR
+2026-08-21 18:14:10 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_185844_inspection.jpg
+2026-08-21 18:14:10 [INFO] src.image_loader: Successfully loaded 8/8 images
+2026-08-21 18:14:10 [INFO] root: Step 2/10: Inspecting product surfaces...
+2026-08-21 18:14:10 [INFO] root: Loaded 8 product images for surface inspection.
+2026-08-21 18:14:10 [INFO] root: Step 3/10: Selecting single best ROI per product image...
+2026-08-21 18:14:15 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_140321:   Single ROI for 20260820_140321 [VALID]: pos=(1184,1504) size=256x256 quality_score=0.813 (sharpness=879.9, contrast=55.1, kps=402)
+2026-08-21 18:14:22 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_140324:   Single ROI for 20260820_140324 [VALID]: pos=(704,1504) size=256x256 quality_score=0.726 (sharpness=549.2, contrast=56.1, kps=104)
+2026-08-21 18:14:27 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_140327:   Single ROI for 20260820_140327 [VALID]: pos=(1856,2176) size=256x256 quality_score=0.920 (sharpness=673.2, contrast=48.3, kps=350)
+2026-08-21 18:14:35 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_185801:   Single ROI for 20260820_185801 [VALID]: pos=(1376,2016) size=256x256 quality_score=0.855 (sharpness=172.1, contrast=57.8, kps=662)
+2026-08-21 18:14:42 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_185812:   Single ROI for 20260820_185812 [VALID]: pos=(1152,1568) size=256x256 quality_score=0.708 (sharpness=84.3, contrast=51.7, kps=571)
+2026-08-21 18:14:46 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_185831:   Single ROI for 20260820_185831 [VALID]: pos=(1024,1440) size=256x256 quality_score=0.892 (sharpness=127.1, contrast=67.6, kps=822)
+2026-08-21 18:14:51 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_185833:   Single ROI for 20260820_185833 [VALID]: pos=(1088,1504) size=256x256 quality_score=0.554 (sharpness=41.2, contrast=48.8, kps=172)
+2026-08-21 18:14:56 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_185844:   Single ROI for 20260820_185844 [VALID]: pos=(1312,2048) size=256x256 quality_score=0.716 (sharpness=194.2, contrast=76.9, kps=408)
+2026-08-21 18:14:56 [INFO] root: Step 4/10: Generating fingerprints...
+2026-08-21 18:14:56 [INFO] src.image_quality: Quality analysis for 20260820_140321: EXCELLENT (score=0.86)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140321 (532 kps, v2.0.0)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_140321_fingerprint.npz
+2026-08-21 18:14:57 [INFO] src.image_quality: Quality analysis for 20260820_140324: EXCELLENT (score=0.86)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140324 (25 kps, v2.0.0)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_140324_fingerprint.npz
+2026-08-21 18:14:57 [INFO] src.image_quality: Quality analysis for 20260820_140327: EXCELLENT (score=0.93)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140327 (491 kps, v2.0.0)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_140327_fingerprint.npz
+2026-08-21 18:14:57 [INFO] src.image_quality: Quality analysis for 20260820_185801: EXCELLENT (score=0.84)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185801 (521 kps, v2.0.0)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_185801_fingerprint.npz
+2026-08-21 18:14:57 [INFO] src.image_quality: Quality analysis for 20260820_185812: EXCELLENT (score=0.78)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185812 (155 kps, v2.0.0)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_185812_fingerprint.npz
+2026-08-21 18:14:57 [INFO] src.image_quality: Quality analysis for 20260820_185831: EXCELLENT (score=0.85)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185831 (430 kps, v2.0.0)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_185831_fingerprint.npz
+2026-08-21 18:14:57 [INFO] src.image_quality: Quality analysis for 20260820_185833: GOOD (score=0.60)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185833 (72 kps, v2.0.0)
+2026-08-21 18:14:57 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_185833_fingerprint.npz
+2026-08-21 18:14:58 [INFO] src.image_quality: Quality analysis for 20260820_185844: EXCELLENT (score=0.79)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185844 (149 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_185844_fingerprint.npz
+2026-08-21 18:14:58 [INFO] root: Step 5/10: Creating image pairs...
+2026-08-21 18:14:58 [INFO] src.dataset_builder: Generating pairs from 8 items...
+2026-08-21 18:14:58 [INFO] src.dataset_builder: Generated 80 pairs: 24 positive, 56 negative
+2026-08-21 18:14:58 [INFO] root: Step 6/10: Extracting matching features...
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140321_aug00 (547 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140321_aug01 (458 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140321_aug02 (529 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140324_aug00 (23 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140324_aug01 (18 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140324_aug02 (25 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140327_aug00 (431 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140327_aug01 (447 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140327_aug02 (490 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185801_aug00 (509 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185801_aug01 (592 kps, v2.0.0)
+2026-08-21 18:14:58 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185801_aug02 (521 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185812_aug00 (136 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185812_aug01 (122 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185812_aug02 (155 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185831_aug00 (362 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185831_aug01 (382 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185831_aug02 (425 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185833_aug00 (70 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185833_aug01 (73 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185833_aug02 (72 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185844_aug00 (167 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185844_aug01 (156 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185844_aug02 (147 kps, v2.0.0)
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_140321_aug00:
+    Raw matches: 532
+    After ratio test: 290
+    After cross-check: 239
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 236/239 inliers, ratio=0.987
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_140321_aug01:
+    Raw matches: 532
+    After ratio test: 195
+    After cross-check: 103
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 100/103 inliers, ratio=0.971
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_140321_aug02:
+    Raw matches: 532
+    After ratio test: 529
+    After cross-check: 529
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 529/529 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_140324_aug00:
+    Raw matches: 25
+    After ratio test: 21
+    After cross-check: 16
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 16/16 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_140324_aug01:
+    Raw matches: 25
+    After ratio test: 17
+    After cross-check: 11
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 10/11 inliers, ratio=0.909
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_140324_aug02:
+    Raw matches: 25
+    After ratio test: 25
+    After cross-check: 25
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 25/25 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_140327_aug00:
+    Raw matches: 491
+    After ratio test: 344
+    After cross-check: 310
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 310/310 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_140327_aug01:
+    Raw matches: 491
+    After ratio test: 326
+    After cross-check: 280
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 279/280 inliers, ratio=0.996
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_140327_aug02:
+    Raw matches: 491
+    After ratio test: 485
+    After cross-check: 484
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 484/484 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185801_aug00:
+    Raw matches: 521
+    After ratio test: 376
+    After cross-check: 338
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 338/338 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185801_aug01:
+    Raw matches: 521
+    After ratio test: 210
+    After cross-check: 124
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 123/124 inliers, ratio=0.992
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185801_aug02:
+    Raw matches: 521
+    After ratio test: 521
+    After cross-check: 521
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 521/521 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185812_aug00:
+    Raw matches: 155
+    After ratio test: 107
+    After cross-check: 84
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 84/84 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185812_aug01:
+    Raw matches: 155
+    After ratio test: 98
+    After cross-check: 84
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 84/84 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185812_aug02:
+    Raw matches: 155
+    After ratio test: 155
+    After cross-check: 155
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 155/155 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185831 <-> 20260820_185831_aug00:
+    Raw matches: 430
+    After ratio test: 216
+    After cross-check: 171
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 171/171 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185831 <-> 20260820_185831_aug01:
+    Raw matches: 430
+    After ratio test: 320
+    After cross-check: 287
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 284/287 inliers, ratio=0.990
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185831 <-> 20260820_185831_aug02:
+    Raw matches: 430
+    After ratio test: 424
+    After cross-check: 423
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 423/423 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185833 <-> 20260820_185833_aug00:
+    Raw matches: 72
+    After ratio test: 55
+    After cross-check: 45
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 44/45 inliers, ratio=0.978
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185833 <-> 20260820_185833_aug01:
+    Raw matches: 72
+    After ratio test: 41
+    After cross-check: 26
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 26/26 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185833 <-> 20260820_185833_aug02:
+    Raw matches: 72
+    After ratio test: 72
+    After cross-check: 72
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 72/72 inliers, ratio=1.000
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185844 <-> 20260820_185844_aug00:
+    Raw matches: 149
+    After ratio test: 62
+    After cross-check: 46
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 44/46 inliers, ratio=0.957
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185844 <-> 20260820_185844_aug01:
+    Raw matches: 149
+    After ratio test: 102
+    After cross-check: 92
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 91/92 inliers, ratio=0.989
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185844 <-> 20260820_185844_aug02:
+    Raw matches: 149
+    After ratio test: 144
+    After cross-check: 141
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 141/141 inliers, ratio=1.000
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_140324: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_140324:
+    Raw matches: 532
+    After ratio test: 5
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_140324: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_140324:
+    Raw matches: 547
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_140327:
+    Raw matches: 532
+    After ratio test: 52
+    After cross-check: 31
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 29/31 inliers, ratio=0.935
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_140327:
+    Raw matches: 547
+    After ratio test: 67
+    After cross-check: 41
+2026-08-21 18:14:59 [INFO] src.ransac: RANSAC: 38/41 inliers, ratio=0.927
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_185801: 5 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_185801:
+    Raw matches: 532
+    After ratio test: 11
+    After cross-check: 5
+2026-08-21 18:14:59 [WARNING] src.ransac: RANSAC failed to estimate homography
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_185801: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_185801:
+    Raw matches: 547
+    After ratio test: 5
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_185812: 1 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_185812:
+    Raw matches: 532
+    After ratio test: 2
+    After cross-check: 1
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_185812: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_185812:
+    Raw matches: 547
+    After ratio test: 3
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_185831: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_185831:
+    Raw matches: 532
+    After ratio test: 3
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_185831: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_185831:
+    Raw matches: 547
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_185833:
+    Raw matches: 532
+    After ratio test: 13
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_185833:
+    Raw matches: 547
+    After ratio test: 6
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_185844:
+    Raw matches: 532
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_185844:
+    Raw matches: 547
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_140327: 1 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_140327:
+    Raw matches: 25
+    After ratio test: 3
+    After cross-check: 1
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_140327: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_140327:
+    Raw matches: 23
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_185801: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_185801:
+    Raw matches: 25
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_185801: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_185801:
+    Raw matches: 23
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_185812: 1 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_185812:
+    Raw matches: 25
+    After ratio test: 2
+    After cross-check: 1
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_185812: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_185812:
+    Raw matches: 23
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_185831: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_185831:
+    Raw matches: 25
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_185831: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_185831:
+    Raw matches: 23
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_185833:
+    Raw matches: 25
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_185833:
+    Raw matches: 23
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_185844:
+    Raw matches: 25
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_185844:
+    Raw matches: 23
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140327 <-> 20260820_185801: 3 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_185801:
+    Raw matches: 491
+    After ratio test: 8
+    After cross-check: 3
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140327_aug00 <-> 20260820_185801: 2 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327_aug00 <-> 20260820_185801:
+    Raw matches: 431
+    After ratio test: 9
+    After cross-check: 2
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140327 <-> 20260820_185812: 3 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_185812:
+    Raw matches: 491
+    After ratio test: 12
+    After cross-check: 3
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140327_aug00 <-> 20260820_185812: 1 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327_aug00 <-> 20260820_185812:
+    Raw matches: 431
+    After ratio test: 6
+    After cross-check: 1
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140327 <-> 20260820_185831: 1 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_185831:
+    Raw matches: 491
+    After ratio test: 1
+    After cross-check: 1
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140327_aug00 <-> 20260820_185831: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327_aug00 <-> 20260820_185831:
+    Raw matches: 431
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140327 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_185833:
+    Raw matches: 491
+    After ratio test: 6
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140327_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327_aug00 <-> 20260820_185833:
+    Raw matches: 431
+    After ratio test: 8
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140327 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_185844:
+    Raw matches: 491
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_140327_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_140327_aug00 <-> 20260820_185844:
+    Raw matches: 431
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185801 <-> 20260820_185812: 3 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185812:
+    Raw matches: 521
+    After ratio test: 15
+    After cross-check: 3
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185801_aug00 <-> 20260820_185812: 1 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801_aug00 <-> 20260820_185812:
+    Raw matches: 509
+    After ratio test: 10
+    After cross-check: 1
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185801 <-> 20260820_185831: 1 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185831:
+    Raw matches: 521
+    After ratio test: 6
+    After cross-check: 1
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185801_aug00 <-> 20260820_185831: 1 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801_aug00 <-> 20260820_185831:
+    Raw matches: 509
+    After ratio test: 9
+    After cross-check: 1
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185801 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185833:
+    Raw matches: 521
+    After ratio test: 9
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185801_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801_aug00 <-> 20260820_185833:
+    Raw matches: 509
+    After ratio test: 6
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185801 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185844:
+    Raw matches: 521
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185801_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185801_aug00 <-> 20260820_185844:
+    Raw matches: 509
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185812 <-> 20260820_185831: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185831:
+    Raw matches: 155
+    After ratio test: 4
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185812_aug00 <-> 20260820_185831: 2 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185812_aug00 <-> 20260820_185831:
+    Raw matches: 136
+    After ratio test: 5
+    After cross-check: 2
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185812 <-> 20260820_185833: 1 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185833:
+    Raw matches: 155
+    After ratio test: 3
+    After cross-check: 1
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185812_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185812_aug00 <-> 20260820_185833:
+    Raw matches: 136
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185812 <-> 20260820_185844: 1 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185844:
+    Raw matches: 155
+    After ratio test: 1
+    After cross-check: 1
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185812_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185812_aug00 <-> 20260820_185844:
+    Raw matches: 136
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185831 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185831 <-> 20260820_185833:
+    Raw matches: 430
+    After ratio test: 6
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185831_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185831_aug00 <-> 20260820_185833:
+    Raw matches: 362
+    After ratio test: 7
+    After cross-check: 0
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185831 <-> 20260820_185844:
+    Raw matches: 430
+    After ratio test: 33
+    After cross-check: 9
+2026-08-21 18:14:59 [WARNING] src.ransac: Too few inliers: 4 < 6
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185831_aug00 <-> 20260820_185844: 5 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185831_aug00 <-> 20260820_185844:
+    Raw matches: 362
+    After ratio test: 21
+    After cross-check: 5
+2026-08-21 18:14:59 [WARNING] src.ransac: Too few inliers: 5 < 6
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185833 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185833 <-> 20260820_185844:
+    Raw matches: 72
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 18:14:59 [WARNING] src.matching: Insufficient matches for 20260820_185833_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 18:14:59 [INFO] src.matching: Matching complete:   Matching 20260820_185833_aug00 <-> 20260820_185844:
+    Raw matches: 70
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 18:14:59 [INFO] src.dataset_builder: Saved features CSV: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/features\features.csv (80 rows)
+2026-08-21 18:14:59 [INFO] root: Step 7/10: Building feature vectors...
+2026-08-21 18:14:59 [INFO] src.dataset_builder: Dataset split (REAL):
+  Train: 35 pairs from 5 items
+  Val:   3 pairs from 1 items
+  Test:  8 pairs from 2 items
+2026-08-21 18:14:59 [INFO] root: Step 8/10: Training Random Forest...
+2026-08-21 18:14:59 [INFO] src.model_training: Training Random Forest with 35 samples, 8 features...
+2026-08-21 18:15:00 [INFO] src.model_training: Validation accuracy: 1.0000
+2026-08-21 18:15:00 [INFO] src.model_training: Training accuracy: 1.0000
+2026-08-21 18:15:00 [INFO] src.model_training: OOB score: 1.0000
+2026-08-21 18:15:00 [INFO] src.model_training: Feature Importances:
+2026-08-21 18:15:00 [INFO] root: Step 9/10: Evaluating...
+2026-08-21 18:15:00 [INFO] src.evaluation: Saved confusion matrix: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\confusion_matrix.png
+2026-08-21 18:15:00 [INFO] src.evaluation: Saved feature importance: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\feature_importance.png
+2026-08-21 18:15:00 [INFO] src.evaluation: Saved ROC curve: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\roc_curve.png
+2026-08-21 18:15:00 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\evaluation_report.json
+2026-08-21 18:15:00 [INFO] src.evaluation: Evaluation complete. Reports saved to C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports
+2026-08-21 18:15:00 [INFO] root: Step 10/10: Saving model...
+2026-08-21 18:15:00 [INFO] src.model_training: Saved model: C:\Users\subha\Downloads\SIH Project\Kalakriti\models\random_forest.joblib
+2026-08-21 18:15:00 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\models\feature_names.json
+2026-08-21 18:15:00 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\models\model_metadata.json
+2026-08-21 18:15:00 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\models\training_metrics.json
+2026-08-21 18:15:00 [INFO] src.model_training: Saved all model artifacts to C:\Users\subha\Downloads\SIH Project\Kalakriti\models
+2026-08-21 22:14:19 [INFO] root: Starting Kalakriti training pipeline...
+2026-08-21 22:14:19 [INFO] root: Step 1/10: Loading images...
+2026-08-21 22:14:19 [INFO] root: Found 8 images in C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw
+2026-08-21 22:14:19 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_140321.jpg (3060x4080)
+2026-08-21 22:14:19 [INFO] src.image_loader: Inspection complete for 20260820_140321.jpg: GOOD
+2026-08-21 22:14:20 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_140321_inspection.jpg
+2026-08-21 22:14:20 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_140324.jpg (3060x4080)
+2026-08-21 22:14:20 [INFO] src.image_loader: Inspection complete for 20260820_140324.jpg: GOOD
+2026-08-21 22:14:20 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_140324_inspection.jpg
+2026-08-21 22:14:20 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_140327.jpg (3060x4080)
+2026-08-21 22:14:20 [INFO] src.image_loader: Inspection complete for 20260820_140327.jpg: GOOD
+2026-08-21 22:14:20 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_140327_inspection.jpg
+2026-08-21 22:14:21 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_185801.jpg (3060x4080)
+2026-08-21 22:14:21 [WARNING] src.image_loader: Low sharpness: blur_score=40.0 < 50.0
+2026-08-21 22:14:21 [INFO] src.image_loader: Inspection complete for 20260820_185801.jpg: FAIR
+2026-08-21 22:14:21 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_185801_inspection.jpg
+2026-08-21 22:14:21 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_185812.jpg (3060x4080)
+2026-08-21 22:14:21 [WARNING] src.image_loader: Low sharpness: blur_score=33.5 < 50.0
+2026-08-21 22:14:21 [INFO] src.image_loader: Inspection complete for 20260820_185812.jpg: FAIR
+2026-08-21 22:14:21 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_185812_inspection.jpg
+2026-08-21 22:14:21 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_185831.jpg (3060x4080)
+2026-08-21 22:14:22 [WARNING] src.image_loader: Low sharpness: blur_score=15.9 < 50.0
+2026-08-21 22:14:22 [INFO] src.image_loader: Inspection complete for 20260820_185831.jpg: FAIR
+2026-08-21 22:14:22 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_185831_inspection.jpg
+2026-08-21 22:14:22 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_185833.jpg (3060x4080)
+2026-08-21 22:14:22 [WARNING] src.image_loader: Low sharpness: blur_score=15.1 < 50.0
+2026-08-21 22:14:22 [INFO] src.image_loader: Inspection complete for 20260820_185833.jpg: FAIR
+2026-08-21 22:14:22 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_185833_inspection.jpg
+2026-08-21 22:14:22 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/raw\20260820_185844.jpg (3060x4080)
+2026-08-21 22:14:23 [WARNING] src.image_loader: Low sharpness: blur_score=19.9 < 50.0
+2026-08-21 22:14:23 [INFO] src.image_loader: Inspection complete for 20260820_185844.jpg: FAIR
+2026-08-21 22:14:23 [INFO] src.image_loader: Saved inspection image: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\20260820_185844_inspection.jpg
+2026-08-21 22:14:23 [INFO] src.image_loader: Successfully loaded 8/8 images
+2026-08-21 22:14:23 [INFO] root: Step 2/10: Inspecting product surfaces...
+2026-08-21 22:14:23 [INFO] root: Loaded 8 product images for surface inspection.
+2026-08-21 22:14:23 [INFO] root: Step 3/10: Selecting single best ROI per product image...
+2026-08-21 22:14:31 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_140321:   Single ROI for 20260820_140321 [VALID]: pos=(1184,1504) size=256x256 quality_score=0.813 (sharpness=879.9, contrast=55.1, kps=402)
+2026-08-21 22:14:38 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_140324:   Single ROI for 20260820_140324 [VALID]: pos=(704,1504) size=256x256 quality_score=0.726 (sharpness=549.2, contrast=56.1, kps=104)
+2026-08-21 22:14:44 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_140327:   Single ROI for 20260820_140327 [VALID]: pos=(1856,2176) size=256x256 quality_score=0.920 (sharpness=673.2, contrast=48.3, kps=350)
+2026-08-21 22:14:51 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_185801:   Single ROI for 20260820_185801 [VALID]: pos=(1376,2016) size=256x256 quality_score=0.855 (sharpness=172.1, contrast=57.8, kps=662)
+2026-08-21 22:14:57 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_185812:   Single ROI for 20260820_185812 [VALID]: pos=(1152,1568) size=256x256 quality_score=0.708 (sharpness=84.3, contrast=51.7, kps=571)
+2026-08-21 22:15:03 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_185831:   Single ROI for 20260820_185831 [VALID]: pos=(1024,1440) size=256x256 quality_score=0.892 (sharpness=127.1, contrast=67.6, kps=822)
+2026-08-21 22:15:09 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_185833:   Single ROI for 20260820_185833 [VALID]: pos=(1088,1504) size=256x256 quality_score=0.554 (sharpness=41.2, contrast=48.8, kps=172)
+2026-08-21 22:15:15 [INFO] src.roi_detection: Selected ONE optimal ROI for 20260820_185844:   Single ROI for 20260820_185844 [VALID]: pos=(1312,2048) size=256x256 quality_score=0.716 (sharpness=194.2, contrast=76.9, kps=408)
+2026-08-21 22:15:15 [INFO] root: Step 4/10: Generating fingerprints...
+2026-08-21 22:15:15 [INFO] src.image_quality: Quality analysis for 20260820_140321: EXCELLENT (score=0.86)
+2026-08-21 22:15:15 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140321 (532 kps, v2.0.0)
+2026-08-21 22:15:15 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_140321_fingerprint.npz
+2026-08-21 22:15:15 [INFO] src.image_quality: Quality analysis for 20260820_140324: EXCELLENT (score=0.86)
+2026-08-21 22:15:15 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140324 (25 kps, v2.0.0)
+2026-08-21 22:15:15 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_140324_fingerprint.npz
+2026-08-21 22:15:15 [INFO] src.image_quality: Quality analysis for 20260820_140327: EXCELLENT (score=0.93)
+2026-08-21 22:15:15 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140327 (491 kps, v2.0.0)
+2026-08-21 22:15:15 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_140327_fingerprint.npz
+2026-08-21 22:15:15 [INFO] src.image_quality: Quality analysis for 20260820_185801: EXCELLENT (score=0.84)
+2026-08-21 22:15:15 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185801 (521 kps, v2.0.0)
+2026-08-21 22:15:15 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_185801_fingerprint.npz
+2026-08-21 22:15:15 [INFO] src.image_quality: Quality analysis for 20260820_185812: EXCELLENT (score=0.78)
+2026-08-21 22:15:15 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185812 (155 kps, v2.0.0)
+2026-08-21 22:15:15 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_185812_fingerprint.npz
+2026-08-21 22:15:16 [INFO] src.image_quality: Quality analysis for 20260820_185831: EXCELLENT (score=0.85)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185831 (430 kps, v2.0.0)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_185831_fingerprint.npz
+2026-08-21 22:15:16 [INFO] src.image_quality: Quality analysis for 20260820_185833: GOOD (score=0.60)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185833 (72 kps, v2.0.0)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_185833_fingerprint.npz
+2026-08-21 22:15:16 [INFO] src.image_quality: Quality analysis for 20260820_185844: EXCELLENT (score=0.79)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185844 (149 kps, v2.0.0)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\20260820_185844_fingerprint.npz
+2026-08-21 22:15:16 [INFO] root: Step 5/10: Creating image pairs...
+2026-08-21 22:15:16 [INFO] src.dataset_builder: Generating pairs from 8 items...
+2026-08-21 22:15:16 [INFO] src.dataset_builder: Generated 80 pairs: 24 positive, 56 negative
+2026-08-21 22:15:16 [INFO] root: Step 6/10: Extracting matching features...
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140321_aug00 (561 kps, v2.0.0)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140321_aug01 (467 kps, v2.0.0)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140321_aug02 (501 kps, v2.0.0)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140324_aug00 (27 kps, v2.0.0)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140324_aug01 (36 kps, v2.0.0)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140324_aug02 (25 kps, v2.0.0)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140327_aug00 (421 kps, v2.0.0)
+2026-08-21 22:15:16 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140327_aug01 (448 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_140327_aug02 (490 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185801_aug00 (480 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185801_aug01 (465 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185801_aug02 (504 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185812_aug00 (140 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185812_aug01 (109 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185812_aug02 (155 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185831_aug00 (368 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185831_aug01 (465 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185831_aug02 (424 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185833_aug00 (63 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185833_aug01 (59 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185833_aug02 (66 kps, v2.0.0)
+2026-08-21 22:15:17 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185844_aug00 (163 kps, v2.0.0)
+2026-08-21 22:15:18 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185844_aug01 (164 kps, v2.0.0)
+2026-08-21 22:15:18 [INFO] src.feature_extraction: Generated fingerprint for 20260820_185844_aug02 (145 kps, v2.0.0)
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_140321_aug00:
+    Raw matches: 532
+    After ratio test: 285
+    After cross-check: 235
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 233/235 inliers, ratio=0.991
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_140321_aug01:
+    Raw matches: 532
+    After ratio test: 260
+    After cross-check: 184
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 181/184 inliers, ratio=0.984
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_140321_aug02:
+    Raw matches: 532
+    After ratio test: 456
+    After cross-check: 444
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 444/444 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_140324_aug00:
+    Raw matches: 25
+    After ratio test: 18
+    After cross-check: 13
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 12/13 inliers, ratio=0.923
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_140324_aug01: 6 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_140324_aug01:
+    Raw matches: 25
+    After ratio test: 13
+    After cross-check: 6
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 6/6 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_140324_aug02:
+    Raw matches: 25
+    After ratio test: 25
+    After cross-check: 25
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 25/25 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_140327_aug00:
+    Raw matches: 491
+    After ratio test: 252
+    After cross-check: 194
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 193/194 inliers, ratio=0.995
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_140327_aug01:
+    Raw matches: 491
+    After ratio test: 298
+    After cross-check: 235
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 232/235 inliers, ratio=0.987
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_140327_aug02:
+    Raw matches: 491
+    After ratio test: 488
+    After cross-check: 488
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 488/488 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185801_aug00:
+    Raw matches: 521
+    After ratio test: 349
+    After cross-check: 306
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 306/306 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185801_aug01:
+    Raw matches: 521
+    After ratio test: 239
+    After cross-check: 146
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 144/146 inliers, ratio=0.986
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185801_aug02:
+    Raw matches: 521
+    After ratio test: 499
+    After cross-check: 495
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 495/495 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185812_aug00:
+    Raw matches: 155
+    After ratio test: 111
+    After cross-check: 81
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 81/81 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185812_aug01:
+    Raw matches: 155
+    After ratio test: 86
+    After cross-check: 57
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 57/57 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185812_aug02:
+    Raw matches: 155
+    After ratio test: 155
+    After cross-check: 155
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 155/155 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185831 <-> 20260820_185831_aug00:
+    Raw matches: 430
+    After ratio test: 209
+    After cross-check: 161
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 161/161 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185831 <-> 20260820_185831_aug01:
+    Raw matches: 430
+    After ratio test: 200
+    After cross-check: 96
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 94/96 inliers, ratio=0.979
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185831 <-> 20260820_185831_aug02:
+    Raw matches: 430
+    After ratio test: 422
+    After cross-check: 422
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 422/422 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185833 <-> 20260820_185833_aug00:
+    Raw matches: 72
+    After ratio test: 52
+    After cross-check: 37
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 37/37 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185833 <-> 20260820_185833_aug01:
+    Raw matches: 72
+    After ratio test: 50
+    After cross-check: 43
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 42/43 inliers, ratio=0.977
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185833 <-> 20260820_185833_aug02:
+    Raw matches: 72
+    After ratio test: 65
+    After cross-check: 65
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 65/65 inliers, ratio=1.000
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185844 <-> 20260820_185844_aug00:
+    Raw matches: 149
+    After ratio test: 71
+    After cross-check: 47
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 46/47 inliers, ratio=0.979
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185844 <-> 20260820_185844_aug01:
+    Raw matches: 149
+    After ratio test: 93
+    After cross-check: 66
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 65/66 inliers, ratio=0.985
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185844 <-> 20260820_185844_aug02:
+    Raw matches: 149
+    After ratio test: 138
+    After cross-check: 130
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 130/130 inliers, ratio=1.000
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_140324: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_140324:
+    Raw matches: 532
+    After ratio test: 5
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_140324: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_140324:
+    Raw matches: 561
+    After ratio test: 3
+    After cross-check: 0
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_140327:
+    Raw matches: 532
+    After ratio test: 52
+    After cross-check: 31
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 29/31 inliers, ratio=0.935
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_140327:
+    Raw matches: 561
+    After ratio test: 55
+    After cross-check: 32
+2026-08-21 22:15:18 [INFO] src.ransac: RANSAC: 30/32 inliers, ratio=0.938
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_185801: 5 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_185801:
+    Raw matches: 532
+    After ratio test: 11
+    After cross-check: 5
+2026-08-21 22:15:18 [WARNING] src.ransac: RANSAC failed to estimate homography
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_185801: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_185801:
+    Raw matches: 561
+    After ratio test: 7
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_185812: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_185812:
+    Raw matches: 532
+    After ratio test: 2
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_185812: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_185812:
+    Raw matches: 561
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_185831: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_185831:
+    Raw matches: 532
+    After ratio test: 3
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_185831: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_185831:
+    Raw matches: 561
+    After ratio test: 2
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_185833: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_185833:
+    Raw matches: 532
+    After ratio test: 13
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_185833:
+    Raw matches: 561
+    After ratio test: 7
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321 <-> 20260820_185844:
+    Raw matches: 532
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140321_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140321_aug00 <-> 20260820_185844:
+    Raw matches: 561
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_140327: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_140327:
+    Raw matches: 25
+    After ratio test: 3
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_140327: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_140327:
+    Raw matches: 27
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_185801: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_185801:
+    Raw matches: 25
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_185801: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_185801:
+    Raw matches: 27
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_185812: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_185812:
+    Raw matches: 25
+    After ratio test: 2
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_185812: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_185812:
+    Raw matches: 27
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_185831: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_185831:
+    Raw matches: 25
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_185831: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_185831:
+    Raw matches: 27
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_185833: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_185833:
+    Raw matches: 25
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_185833:
+    Raw matches: 27
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324 <-> 20260820_185844:
+    Raw matches: 25
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140324_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140324_aug00 <-> 20260820_185844:
+    Raw matches: 27
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140327 <-> 20260820_185801: 3 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_185801:
+    Raw matches: 491
+    After ratio test: 8
+    After cross-check: 3
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140327_aug00 <-> 20260820_185801: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327_aug00 <-> 20260820_185801:
+    Raw matches: 421
+    After ratio test: 8
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140327 <-> 20260820_185812: 3 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_185812:
+    Raw matches: 491
+    After ratio test: 12
+    After cross-check: 3
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140327_aug00 <-> 20260820_185812: 2 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327_aug00 <-> 20260820_185812:
+    Raw matches: 421
+    After ratio test: 5
+    After cross-check: 2
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140327 <-> 20260820_185831: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_185831:
+    Raw matches: 491
+    After ratio test: 1
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140327_aug00 <-> 20260820_185831: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327_aug00 <-> 20260820_185831:
+    Raw matches: 421
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140327 <-> 20260820_185833: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_185833:
+    Raw matches: 491
+    After ratio test: 6
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140327_aug00 <-> 20260820_185833: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327_aug00 <-> 20260820_185833:
+    Raw matches: 421
+    After ratio test: 5
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140327 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327 <-> 20260820_185844:
+    Raw matches: 491
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_140327_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_140327_aug00 <-> 20260820_185844:
+    Raw matches: 421
+    After ratio test: 1
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185801 <-> 20260820_185812: 3 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185812:
+    Raw matches: 521
+    After ratio test: 15
+    After cross-check: 3
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185801_aug00 <-> 20260820_185812: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801_aug00 <-> 20260820_185812:
+    Raw matches: 480
+    After ratio test: 9
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185801 <-> 20260820_185831: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185831:
+    Raw matches: 521
+    After ratio test: 6
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185801_aug00 <-> 20260820_185831: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801_aug00 <-> 20260820_185831:
+    Raw matches: 480
+    After ratio test: 6
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185801 <-> 20260820_185833: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185833:
+    Raw matches: 521
+    After ratio test: 9
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185801_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801_aug00 <-> 20260820_185833:
+    Raw matches: 480
+    After ratio test: 8
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185801 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801 <-> 20260820_185844:
+    Raw matches: 521
+    After ratio test: 2
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185801_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185801_aug00 <-> 20260820_185844:
+    Raw matches: 480
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185812 <-> 20260820_185831: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185831:
+    Raw matches: 155
+    After ratio test: 4
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185812_aug00 <-> 20260820_185831: 2 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185812_aug00 <-> 20260820_185831:
+    Raw matches: 140
+    After ratio test: 6
+    After cross-check: 2
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185812 <-> 20260820_185833: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185833:
+    Raw matches: 155
+    After ratio test: 3
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185812_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185812_aug00 <-> 20260820_185833:
+    Raw matches: 140
+    After ratio test: 5
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185812 <-> 20260820_185844: 1 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185812 <-> 20260820_185844:
+    Raw matches: 155
+    After ratio test: 1
+    After cross-check: 1
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185812_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185812_aug00 <-> 20260820_185844:
+    Raw matches: 140
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185831 <-> 20260820_185833: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185831 <-> 20260820_185833:
+    Raw matches: 430
+    After ratio test: 6
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185831_aug00 <-> 20260820_185833: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185831_aug00 <-> 20260820_185833:
+    Raw matches: 368
+    After ratio test: 4
+    After cross-check: 0
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185831 <-> 20260820_185844:
+    Raw matches: 430
+    After ratio test: 33
+    After cross-check: 9
+2026-08-21 22:15:18 [WARNING] src.ransac: Too few inliers: 4 < 6
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185831_aug00 <-> 20260820_185844: 3 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185831_aug00 <-> 20260820_185844:
+    Raw matches: 368
+    After ratio test: 21
+    After cross-check: 3
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185833 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185833 <-> 20260820_185844:
+    Raw matches: 72
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [WARNING] src.matching: Insufficient matches for 20260820_185833_aug00 <-> 20260820_185844: 0 < 8
+2026-08-21 22:15:18 [INFO] src.matching: Matching complete:   Matching 20260820_185833_aug00 <-> 20260820_185844:
+    Raw matches: 63
+    After ratio test: 0
+    After cross-check: 0
+2026-08-21 22:15:18 [INFO] src.dataset_builder: Saved features CSV: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/features\features.csv (80 rows)
+2026-08-21 22:15:18 [INFO] root: Step 7/10: Building feature vectors...
+2026-08-21 22:15:18 [INFO] src.dataset_builder: Dataset split (REAL):
+  Train: 35 pairs from 5 items
+  Val:   3 pairs from 1 items
+  Test:  8 pairs from 2 items
+2026-08-21 22:15:18 [INFO] root: Step 8/10: Training Random Forest...
+2026-08-21 22:15:18 [INFO] src.model_training: Training Random Forest with 35 samples, 8 features...
+2026-08-21 22:15:18 [INFO] src.model_training: Validation accuracy: 1.0000
+2026-08-21 22:15:18 [INFO] src.model_training: Training accuracy: 1.0000
+2026-08-21 22:15:18 [INFO] src.model_training: OOB score: 0.9714
+2026-08-21 22:15:18 [INFO] src.model_training: Feature Importances:
+2026-08-21 22:15:18 [INFO] root: Step 9/10: Evaluating...
+2026-08-21 22:15:18 [INFO] src.evaluation: Saved confusion matrix: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\confusion_matrix.png
+2026-08-21 22:15:19 [INFO] src.evaluation: Saved feature importance: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\feature_importance.png
+2026-08-21 22:15:19 [INFO] src.evaluation: Saved ROC curve: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\roc_curve.png
+2026-08-21 22:15:19 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports\evaluation_report.json
+2026-08-21 22:15:19 [INFO] src.evaluation: Evaluation complete. Reports saved to C:\Users\subha\Downloads\SIH Project\Kalakriti\data/reports
+2026-08-21 22:15:19 [INFO] root: Step 10/10: Saving model...
+2026-08-21 22:15:19 [INFO] src.model_training: Saved model: C:\Users\subha\Downloads\SIH Project\Kalakriti\models\random_forest.joblib
+2026-08-21 22:15:19 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\models\feature_names.json
+2026-08-21 22:15:19 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\models\model_metadata.json
+2026-08-21 22:15:19 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\models\training_metrics.json
+2026-08-21 22:15:19 [INFO] src.model_training: Saved all model artifacts to C:\Users\subha\Downloads\SIH Project\Kalakriti\models

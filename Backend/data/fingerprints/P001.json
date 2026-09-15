@@ -1,0 +1,74 @@
+{
+  "product_id": "P001",
+  "product_name": "Pashmina Shawl",
+  "manufacturer_id": "KALAKRITI_AUTH_MFG",
+  "category": "handicraft",
+  "batch_number": "BATCH_2026_01",
+  "manufacturing_location": "India",
+  "registration_timestamp": "2026-08-21T18:17:10.668758",
+  "feature_version": "2.0.0",
+  "preprocessing_version": "1.0.0",
+  "model_version": "2.0.0",
+  "manifest": {
+    "product_id": "P001",
+    "product_name": "Pashmina Shawl",
+    "manufacturer_id": "KALAKRITI_AUTH_MFG",
+    "category": "handicraft",
+    "batch_number": "BATCH_2026_01",
+    "manufacturing_location": "India",
+    "registered_at": "2026-08-21T18:17:10.668758",
+    "fingerprint_summary": {
+      "num_keypoints": 1029,
+      "feature_method": "ORB",
+      "roi_position": [
+        352,
+        1312
+      ],
+      "roi_size": [
+        256,
+        256
+      ],
+      "roi_quality": 0.8598813216476999
+    }
+  },
+  "manifest_hash": "c560ab538a8aec82facdfbd28b06607d479df07fdd225dcb7acfc7eb340d9831",
+  "rsa_signature": "30bc21cd45c5ee1765e97b9d489bebd99ba9a8cc1b909bafe172d996055912da0fb8d37910a04be7b3688f4c8cedcc11436f8ba4878fd3de86db13a6d0be4b9ae0508b83ee8550a5018acaac868f84ae999d545ed8a075a76ac9baf73b7b5548cb5256dfa95e62d09d136677abfca40cffe54c935c00c2a485ffebe18c676d4558a3e175589a47a30a32eaad85444105c36b655514551d04225b96219149eefe4e6d462278fe60e61c760d7368b761e616cbea6082c9fb0891546af4344c78df1912a6042d80709cf694c22efe7c3d4f0324783594650e639059f9b3c1558d62f41918365730a14c1095edf6f4840fc5780f27fe1d9bbd4cb2c317f79e5cbec3",
+  "roi_metadata": {
+    "position": [
+      352,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "quality_score": 0.8598813216476999,
+    "sharpness": 304.14888800284825,
+    "contrast": 39.93921240599211,
+    "gradient_strength": 62.00739596927449,
+    "keypoint_count": 1029,
+    "reflection_ratio": 7.62939453125e-05,
+    "is_valid": true
+  },
+  "registration_metadata": {
+    "registered_at": "2026-08-21T18:17:10.668758",
+    "source_images": [
+      "20260820_133248.jpg"
+    ],
+    "image_count": 1,
+    "fingerprint_file": "P001_fingerprint.npz"
+  },
+  "fingerprint_summary": {
+    "num_keypoints": 1029,
+    "feature_method": "ORB",
+    "roi_position": [
+      352,
+      1312
+    ],
+    "roi_size": [
+      256,
+      256
+    ],
+    "roi_quality": 0.8598813216476999
+  }
+}

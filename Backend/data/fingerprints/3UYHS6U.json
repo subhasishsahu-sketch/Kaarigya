@@ -1,0 +1,74 @@
+{
+  "product_id": "3UYHS6U",
+  "product_name": "Puri Palm Leaf Pattachitra Painting",
+  "manufacturer_id": "KALAKRITI_AUTH_MFG",
+  "category": "Palm Leaf Engraving",
+  "batch_number": "BATCH_2026_01",
+  "manufacturing_location": "Puri, Odisha",
+  "registration_timestamp": "2026-08-30T16:31:47.096859",
+  "feature_version": "2.0.0",
+  "preprocessing_version": "1.0.0",
+  "model_version": "2.0.0",
+  "manifest": {
+    "product_id": "3UYHS6U",
+    "product_name": "Puri Palm Leaf Pattachitra Painting",
+    "manufacturer_id": "KALAKRITI_AUTH_MFG",
+    "category": "Palm Leaf Engraving",
+    "batch_number": "BATCH_2026_01",
+    "manufacturing_location": "Puri, Odisha",
+    "registered_at": "2026-08-30T16:31:47.096859",
+    "fingerprint_summary": {
+      "num_keypoints": 146,
+      "feature_method": "ORB",
+      "roi_position": [
+        1312,
+        2048
+      ],
+      "roi_size": [
+        256,
+        256
+      ],
+      "roi_quality": 0.7225111098883022
+    }
+  },
+  "manifest_hash": "476420925f8bba109fffd863d889db8667fdf44780a1aee793445787fbf1507f",
+  "rsa_signature": "58b0c80603825af4b601763123ca122b87e29c9a55660c17b639d4b71bd59ae0ff932aaa668c021e32c983ccb9ce4199f6b40098be54aa717815d583d7977c88177687f00c1e8d13cbf725bd3a12dba06054732e597c2965e9c273b1a1cc172de6a209abcd0b0b1638f17aa73258b12184041cd17f53a0aa6b8caf0db34b313046bd4d28047492abb647fa8da343f0a305fa4044f5e9c3ace26533ce9cbf128935ac738e241205479e578b821834392a9809d146c3b08107dee894ca1494d7410a57292f28f61ebee72456698aea527bc197ae9d8dd8bf826b9b4dc3f2a4625f0c26a10dfd1c92af554295ea9013d8b87f2ca82cbb87e139ed59c0da45425cd1",
+  "roi_metadata": {
+    "position": [
+      1312,
+      2048
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "quality_score": 0.7225111098883022,
+    "sharpness": 199.03698970540427,
+    "contrast": 76.80733030232528,
+    "gradient_strength": 61.08094678209502,
+    "keypoint_count": 146,
+    "reflection_ratio": 0.054290771484375,
+    "is_valid": true
+  },
+  "registration_metadata": {
+    "registered_at": "2026-08-30T16:31:47.096859",
+    "source_images": [
+      "3UYHS6U_1788087696.jpg"
+    ],
+    "image_count": 1,
+    "fingerprint_file": "3UYHS6U_fingerprint.npz"
+  },
+  "fingerprint_summary": {
+    "num_keypoints": 146,
+    "feature_method": "ORB",
+    "roi_position": [
+      1312,
+      2048
+    ],
+    "roi_size": [
+      256,
+      256
+    ],
+    "roi_quality": 0.7225111098883022
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "train_accuracy": 1.0,
+  "n_train_samples": 35,
+  "n_features": 8,
+  "n_positive_train": 15,
+  "n_negative_train": 20,
+  "oob_score": 0.9714285714285714,
+  "val_accuracy": 1.0,
+  "n_val_samples": 3,
+  "feature_importances": {
+    "ransac_inlier_ratio": 0.16997834936645034,
+    "reprojection_error": 0.1407252926486662,
+    "spatial_spread": 0.10221646237227354,
+    "avg_inlier_descriptor_distance": 0.1822850951568664,
+    "normalized_match_count": 0.1773131013309104,
+    "lbp_similarity": 0.0818942317807482,
+    "glcm_similarity": 0.045409915468971294,
+    "glcm_distance": 0.10017755187511376
+  }
+}

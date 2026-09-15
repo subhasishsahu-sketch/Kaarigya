@@ -1,0 +1,74 @@
+{
+  "product_id": "prod-1788077971913-wlcky",
+  "product_name": "Sambalpuri Ikat Silk Textile",
+  "manufacturer_id": "KALAKRITI_AUTH_MFG",
+  "category": "Handloom Weaving",
+  "batch_number": "BATCH_2026_01",
+  "manufacturing_location": "Sambalpur, Odisha",
+  "registration_timestamp": "2026-08-30T13:49:39.547342",
+  "feature_version": "2.0.0",
+  "preprocessing_version": "1.0.0",
+  "model_version": "2.0.0",
+  "manifest": {
+    "product_id": "prod-1788077971913-wlcky",
+    "product_name": "Sambalpuri Ikat Silk Textile",
+    "manufacturer_id": "KALAKRITI_AUTH_MFG",
+    "category": "Handloom Weaving",
+    "batch_number": "BATCH_2026_01",
+    "manufacturing_location": "Sambalpur, Odisha",
+    "registered_at": "2026-08-30T13:49:39.547342",
+    "fingerprint_summary": {
+      "num_keypoints": 146,
+      "feature_method": "ORB",
+      "roi_position": [
+        1312,
+        2048
+      ],
+      "roi_size": [
+        256,
+        256
+      ],
+      "roi_quality": 0.7225111098883022
+    }
+  },
+  "manifest_hash": "8b928697249863c2717c06d5451fdd7a9f012524d523751cc0ddf7b4cb04a3a9",
+  "rsa_signature": "05d9dd92ce07f67c745f679d0625364d7e8a80f978ae2da05f99542ccb6d1de637471bc37944aafdd807abb490d3f7bbb82dde09b0ec5290355bb9dea0fab2c2f12c8afabdfc092b86076b8daffb00952192ff74cbda64318835c9115e57c9a44d388cb62e14950c265468d1d823dca3a8db2fa614c7ac810bfda11bf30dd602b7eda8fec74e30d3ee55f60c73c5aabb89d030455dca3ac4e0eb14dbbd6b4f3c9721387a1b51c1492a1d8eb540ea309e34df2aebfa484b96f982d4ac390a62363d5a0c5dbd3e54f1a4c4ab0c598a075cd851bbd7c9c0c86c8215404648ecd335c38c658fcb5c407fb1f7a780137c748257cd1b40ae493ef3aa2b374f2d4a9969",
+  "roi_metadata": {
+    "position": [
+      1312,
+      2048
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "quality_score": 0.7225111098883022,
+    "sharpness": 199.03698970540427,
+    "contrast": 76.80733030232528,
+    "gradient_strength": 61.08094678209502,
+    "keypoint_count": 146,
+    "reflection_ratio": 0.054290771484375,
+    "is_valid": true
+  },
+  "registration_metadata": {
+    "registered_at": "2026-08-30T13:49:39.547342",
+    "source_images": [
+      "prod-1788077971913-wlcky_1788077972.jpg"
+    ],
+    "image_count": 1,
+    "fingerprint_file": "prod-1788077971913-wlcky_fingerprint.npz"
+  },
+  "fingerprint_summary": {
+    "num_keypoints": 146,
+    "feature_method": "ORB",
+    "roi_position": [
+      1312,
+      2048
+    ],
+    "roi_size": [
+      256,
+      256
+    ],
+    "roi_quality": 0.7225111098883022
+  }
+}

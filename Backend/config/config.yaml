@@ -1,0 +1,204 @@
+# =============================================================================
+# Kalakriti — Physical Product Authentication Configuration
+# =============================================================================
+
+# --- Feature Extraction Method ---
+feature_method: ORB   # Options: ORB, AKAZE
+
+# --- ORB Parameters ---
+orb:
+  nfeatures: 1500
+  scaleFactor: 1.2
+  nlevels: 8
+  edgeThreshold: 31
+  patchSize: 31
+
+# --- AKAZE Parameters ---
+akaze:
+  descriptor_type: 5        # AKAZE::DESCRIPTOR_MLDB
+  descriptor_size: 0         # Full size
+  descriptor_channels: 3
+  threshold: 0.001
+  nOctaves: 4
+  nOctaveLayers: 4
+
+# --- LBP Parameters ---
+lbp:
+  radius: 3
+  n_points: 24               # 8 * radius
+  method: uniform
+
+# --- Image Preprocessing ---
+preprocessing:
+  working_size: 512           # Resize longest edge to this
+  roi_size: 256               # Single ROI patch size (width/height)
+  denoise_h: 10               # fastNlMeansDenoising strength
+  clahe_clip_limit: 2.0
+  clahe_tile_grid_size: 8
+
+# --- Product Surface Detection & ROI Selection ---
+surface_detection:
+  enabled: true
+  min_surface_area_ratio: 0.10
+  edge_margin_ratio: 0.05     # Exclude outer perimeter of image
+
+roi_selection:
+  grid_step: 32               # Dense sliding window step for finding optimal ROI
+  min_texture_score: 0.15     # Minimum acceptable combined ROI quality score
+  min_sharpness: 40.0         # Minimum Laplacian variance for patch
+  max_reflection_ratio: 0.12  # Max allowable ratio of specular overexposed pixels (>245)
+  min_contrast: 15.0          # Minimum local standard deviation
+  min_keypoints: 15           # Minimum keypoints inside candidate ROI
+  # Scoring weights
+  weight_sharpness: 0.25
+  weight_gradient: 0.25
+  weight_variance: 0.25
+  weight_keypoints: 0.25
+  # Penalty multipliers
+  blur_penalty_factor: 0.5
+  reflection_penalty_factor: 1.0
+  edge_penalty_factor: 0.3
+
+# --- Image Quality Pre-flight Thresholds ---
+quality:
+  min_blur_score: 50.0
+  min_brightness: 35.0
+  max_brightness: 225.0
+  min_contrast: 18.0
+  min_keypoints: 25
+  min_texture_richness: 5.0
+  max_specular_ratio: 0.15
+
+# --- Feature Matching ---
+matching:
+  ratio_test: 0.75            # Lowe's ratio test threshold
+  cross_check: true           # Enable bidirectional cross-check
+  min_matches: 8              # Minimum matches to proceed
+
+# --- RANSAC ---
+ransac:
+  reprojection_threshold: 5.0
+  confidence: 0.995
+  max_iterations: 5000
+  min_inliers: 6              # Minimum inliers for valid homography
+
+# --- Random Forest Model ---
+model:
+  type: random_forest
+  n_estimators: 200
+  max_depth: 10
+  min_samples_split: 5
+  min_samples_leaf: 2
+  class_weight: balanced
+  random_state: 42
+
+# --- Decision Thresholds ---
+decision:
+  verification_threshold: 0.85   # Calibrated threshold for 1:N verification decision (85.0%)
+  genuine_threshold: 0.85        # Above this -> VERIFIED / AUTHENTIC
+  suspicious_threshold: 0.60     # Below this -> NOT VERIFIED / UNKNOWN
+
+# --- Product Registry ---
+registry:
+  storage_dir: data/fingerprints
+  allow_overwrite: false
+  save_roi_image: true
+
+# --- Dataset ---
+dataset:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  min_items_for_training: 4   # Minimum items for REAL training mode
+  augmentation_per_item: 3    # Number of augmented versions per item
+
+# --- Augmentation ---
+augmentation:
+  rotation_range: 15          # degrees
+  scale_range: [0.9, 1.1]
+  brightness_range: [-30, 30]
+  contrast_range: [0.8, 1.2]
+  blur_max_kernel: 3
+  translation_range: 10       # pixels
+  perspective_strength: 0.02
+
+# --- Debug ---
+debug:
+  enabled: true
+  save_roi_preview: true
+  save_keypoint_preview: true
+  save_match_preview: true
+  save_ransac_preview: true
+
+# --- Paths ---
+paths:
+  raw: data/raw
+  roi: data/roi
+  fingerprints: data/fingerprints
+  pairs: data/pairs
+  features: data/features
+  reports: data/reports
+  models: models
+
+# =============================================================================
+# Layer 2 — Counterfeit Intelligence & Detection System
+# =============================================================================
+
+layer2:
+
+  # Storage directory (relative to project root)
+  storage_dir: data/layer2
+
+  # --- Duplicate Detection ---
+  duplicate_detection:
+    image_hash_exact: true
+    feature_similarity_threshold: 0.95   # cosine similarity [0..1]
+    timestamp_window_hours: 1.0          # same product within N hours
+    geo_proximity_km: 0.5                # optional geo proximity signal
+
+  # --- Visual Pattern Clustering (DBSCAN on Layer 1 feature vectors) ---
+  visual_clustering:
+    eps: 0.25          # DBSCAN epsilon in L2-normalised feature space
+    min_samples: 2     # minimum cluster size
+
+  # --- Geographic Clustering (DBSCAN on lat/lon) ---
+  geo_clustering:
+    eps_km: 50.0       # radius in km for DBSCAN neighbourhood
+    min_samples: 2     # minimum cluster size
+
+  # --- Heatmap ---
+  heatmap:
+    cell_size_degrees: 1.0   # grid cell size (approx 111 km per degree)
+
+  # --- Time-Series Trend Analysis ---
+  trend_analysis:
+    moving_average_window: 7     # days
+    spike_multiplier: 2.5        # count > N × historical mean → spike
+    min_history_days: 3          # days before spike detection activates
+
+  # --- Geographic Risk Scoring ---
+  risk_scoring:
+    weights:
+      detection_volume: 0.30
+      recent_activity: 0.25
+      growth_rate: 0.20
+      pattern_density: 0.15
+      geo_density: 0.10
+    thresholds:
+      low: 20
+      moderate: 40
+      elevated: 60
+      high: 80
+      # > 80 = CRITICAL
+
+  # --- Alert Engine ---
+  alerts:
+    cooldown_hours: 24.0             # suppress duplicate alert of same type
+    spike_window_hours: 24           # Rule A: time window for spike detection
+    spike_count_threshold: 5         # Rule A: min detections in window
+    high_risk_score_threshold: 61    # Rule B: cluster risk score ≥ N → alert
+    pattern_repeat_threshold: 3      # Rule C: pattern seen ≥ N times → alert
+    pattern_spread_cluster_threshold: 2  # Rule D: pattern in ≥ N clusters → alert
+    density_window_hours: 1          # Rule E: lookback window (hours)
+    density_count_threshold: 5       # Rule E: detections in window → alert
+    growth_rate_threshold_pct: 50.0  # Rule F: growth rate % vs baseline

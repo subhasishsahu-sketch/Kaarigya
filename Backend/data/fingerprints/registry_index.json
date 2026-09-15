@@ -1,0 +1,74 @@
+{
+  "products": {
+    "P001": {
+      "product_name": "Pashmina Shawl",
+      "metadata_file": "P001.json",
+      "fingerprint_file": "P001_fingerprint.npz",
+      "registered_at": "2026-08-21T18:17:10.668758",
+      "image_count": 1,
+      "quality_score": 0.8598813216476999,
+      "manifest_hash": "c560ab538a8aec82facdfbd28b06607d479df07fdd225dcb7acfc7eb340d9831",
+      "has_signature": true
+    },
+    "prod-1788077971913-wlcky": {
+      "product_name": "Sambalpuri Ikat Silk Textile",
+      "metadata_file": "prod-1788077971913-wlcky.json",
+      "fingerprint_file": "prod-1788077971913-wlcky_fingerprint.npz",
+      "registered_at": "2026-08-30T13:49:39.547342",
+      "image_count": 1,
+      "quality_score": 0.7225111098883022,
+      "manifest_hash": "8b928697249863c2717c06d5451fdd7a9f012524d523751cc0ddf7b4cb04a3a9",
+      "has_signature": true
+    },
+    "98V5U46": {
+      "product_name": "Puri Palm Leaf Pattachitra Painting",
+      "metadata_file": "98V5U46.json",
+      "fingerprint_file": "98V5U46_fingerprint.npz",
+      "registered_at": "2026-08-30T16:24:13.626905",
+      "image_count": 1,
+      "quality_score": 0.7225111098883022,
+      "manifest_hash": "9658901d85e45c347273adf9eed1870983db8b48d1df7bcede7d93719f7de800",
+      "has_signature": true
+    },
+    "WLMR2QE": {
+      "product_name": "Puri Palm Leaf Pattachitra Painting",
+      "metadata_file": "WLMR2QE.json",
+      "fingerprint_file": "WLMR2QE_fingerprint.npz",
+      "registered_at": "2026-08-30T16:26:33.773081",
+      "image_count": 1,
+      "quality_score": 0.7225111098883022,
+      "manifest_hash": "b8a342cb46c89c24e44c153555f66654339d0c05ffd8a2a7b697d494e946156b",
+      "has_signature": true
+    },
+    "SUTLKYD": {
+      "product_name": "Puri Palm Leaf Pattachitra Painting",
+      "metadata_file": "SUTLKYD.json",
+      "fingerprint_file": "SUTLKYD_fingerprint.npz",
+      "registered_at": "2026-08-30T16:30:02.173548",
+      "image_count": 1,
+      "quality_score": 0.7225111098883022,
+      "manifest_hash": "c46f1db714554cd539e45249eadccdc29e32d667c616d843ff34d88e9df0af32",
+      "has_signature": true
+    },
+    "3UYHS6U": {
+      "product_name": "Puri Palm Leaf Pattachitra Painting",
+      "metadata_file": "3UYHS6U.json",
+      "fingerprint_file": "3UYHS6U_fingerprint.npz",
+      "registered_at": "2026-08-30T16:31:47.096859",
+      "image_count": 1,
+      "quality_score": 0.7225111098883022,
+      "manifest_hash": "476420925f8bba109fffd863d889db8667fdf44780a1aee793445787fbf1507f",
+      "has_signature": true
+    },
+    "3PV9NTU": {
+      "product_name": "Bastar Lost-Wax Dhokra Bull Figurine",
+      "metadata_file": "3PV9NTU.json",
+      "fingerprint_file": "3PV9NTU_fingerprint.npz",
+      "registered_at": "2026-08-30T16:32:16.072446",
+      "image_count": 1,
+      "quality_score": 0.7225111098883022,
+      "manifest_hash": "0cfbd9820d49f3b14ac14e02c990c5fffa5fdc684ff005bbbece32491cdb3a60",
+      "has_signature": true
+    }
+  }
+}

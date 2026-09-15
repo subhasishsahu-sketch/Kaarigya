@@ -1,0 +1,17 @@
+# Frontend
+Frontend/.vite/
+node_modules/
+
+# Python cache and environments
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Secrets
+.env
+*.pem
+
+# Generated ML binary files
+*.npz
+Frontend.zip

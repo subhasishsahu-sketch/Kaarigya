@@ -1,0 +1,74 @@
+{
+  "product_id": "3PV9NTU",
+  "product_name": "Bastar Lost-Wax Dhokra Bull Figurine",
+  "manufacturer_id": "KALAKRITI_AUTH_MFG",
+  "category": "Metal Casting",
+  "batch_number": "BATCH_2026_01",
+  "manufacturing_location": "Bastar, Chhattisgarh",
+  "registration_timestamp": "2026-08-30T16:32:16.072446",
+  "feature_version": "2.0.0",
+  "preprocessing_version": "1.0.0",
+  "model_version": "2.0.0",
+  "manifest": {
+    "product_id": "3PV9NTU",
+    "product_name": "Bastar Lost-Wax Dhokra Bull Figurine",
+    "manufacturer_id": "KALAKRITI_AUTH_MFG",
+    "category": "Metal Casting",
+    "batch_number": "BATCH_2026_01",
+    "manufacturing_location": "Bastar, Chhattisgarh",
+    "registered_at": "2026-08-30T16:32:16.072446",
+    "fingerprint_summary": {
+      "num_keypoints": 146,
+      "feature_method": "ORB",
+      "roi_position": [
+        1312,
+        2048
+      ],
+      "roi_size": [
+        256,
+        256
+      ],
+      "roi_quality": 0.7225111098883022
+    }
+  },
+  "manifest_hash": "0cfbd9820d49f3b14ac14e02c990c5fffa5fdc684ff005bbbece32491cdb3a60",
+  "rsa_signature": "a08bcce7c0f8e2dd66549e677b8c340e9fc5cbf38fad4aae030e86f573eea256f4756da1e91a5b45d18d891e881b26b9dca0e183695e94ecbc981615e3d702b82f0ecb44e6b81aa9fcc269210de384126bbd8e326dc0281b7af442308fb7a6ebac6f32d81b68494256b6921a06361412283a054ee5130f2bb5e651a49662af82f791115ec2c73718613a233280bf88b7b0b9d58e23d5b2ced6906eb2c917d75e78130b057a1fe3c065d86173c9a53e7907260b00214aca0ec5fc57b5064e418a1b8ee72cad9b8fdee83159fa5a7d065e4bc8ce64cbd91aff4fcc6b993afda1cb0a181af221c42f286c1f4ca26555dd8560ef33381380aca992fe3dd9401493b5",
+  "roi_metadata": {
+    "position": [
+      1312,
+      2048
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "quality_score": 0.7225111098883022,
+    "sharpness": 199.03698970540427,
+    "contrast": 76.80733030232528,
+    "gradient_strength": 61.08094678209502,
+    "keypoint_count": 146,
+    "reflection_ratio": 0.054290771484375,
+    "is_valid": true
+  },
+  "registration_metadata": {
+    "registered_at": "2026-08-30T16:32:16.072446",
+    "source_images": [
+      "3PV9NTU_1788087724.jpg"
+    ],
+    "image_count": 1,
+    "fingerprint_file": "3PV9NTU_fingerprint.npz"
+  },
+  "fingerprint_summary": {
+    "num_keypoints": 146,
+    "feature_method": "ORB",
+    "roi_position": [
+      1312,
+      2048
+    ],
+    "roi_size": [
+      256,
+      256
+    ],
+    "roi_quality": 0.7225111098883022
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "product_id": "SUTLKYD",
+  "product_name": "Puri Palm Leaf Pattachitra Painting",
+  "manufacturer_id": "KALAKRITI_AUTH_MFG",
+  "category": "Palm Leaf Engraving",
+  "batch_number": "BATCH_2026_01",
+  "manufacturing_location": "Puri, Odisha",
+  "registration_timestamp": "2026-08-30T16:30:02.173548",
+  "feature_version": "2.0.0",
+  "preprocessing_version": "1.0.0",
+  "model_version": "2.0.0",
+  "manifest": {
+    "product_id": "SUTLKYD",
+    "product_name": "Puri Palm Leaf Pattachitra Painting",
+    "manufacturer_id": "KALAKRITI_AUTH_MFG",
+    "category": "Palm Leaf Engraving",
+    "batch_number": "BATCH_2026_01",
+    "manufacturing_location": "Puri, Odisha",
+    "registered_at": "2026-08-30T16:30:02.173548",
+    "fingerprint_summary": {
+      "num_keypoints": 146,
+      "feature_method": "ORB",
+      "roi_position": [
+        1312,
+        2048
+      ],
+      "roi_size": [
+        256,
+        256
+      ],
+      "roi_quality": 0.7225111098883022
+    }
+  },
+  "manifest_hash": "c46f1db714554cd539e45249eadccdc29e32d667c616d843ff34d88e9df0af32",
+  "rsa_signature": "2c81c4a413dd09d6cbcea8e4b1b256e3ec3178fdaf68de2c77944aa1c29eddf5f45596eb4512fb8af568919cd897c6eaa4936d6acdc0fa005c8046c9f9507f622a1ceaab12733a898587f91b8a65e36f57d578c42b148815938d34caa772a5c8c70167aebb7266f19c600749e5676952c4c4d827103f1a09b096dab4c3609867b6a674fafa03e9f31f27a0ebec255f3ba2ebc359802ec159117aaabed46066732d156345b681adccdd3649d2b528126606760ecb320dfb1009d561213294c459a6145e4ed5d9cde724fe0870e3dd08664fa8e2e42dc59c6dcda5e1c212b74f6388310636a52f70de37b37be67c67f139c96300920ec71e37560a9efcc3552c10",
+  "roi_metadata": {
+    "position": [
+      1312,
+      2048
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "quality_score": 0.7225111098883022,
+    "sharpness": 199.03698970540427,
+    "contrast": 76.80733030232528,
+    "gradient_strength": 61.08094678209502,
+    "keypoint_count": 146,
+    "reflection_ratio": 0.054290771484375,
+    "is_valid": true
+  },
+  "registration_metadata": {
+    "registered_at": "2026-08-30T16:30:02.173548",
+    "source_images": [
+      "SUTLKYD_1788087591.jpg"
+    ],
+    "image_count": 1,
+    "fingerprint_file": "SUTLKYD_fingerprint.npz"
+  },
+  "fingerprint_summary": {
+    "num_keypoints": 146,
+    "feature_method": "ORB",
+    "roi_position": [
+      1312,
+      2048
+    ],
+    "roi_size": [
+      256,
+      256
+    ],
+    "roi_quality": 0.7225111098883022
+  }
+}

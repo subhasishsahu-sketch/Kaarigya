@@ -1,0 +1,6 @@
+{
+  "name": "Kaarigya — Where Craft Meets Trust",
+  "description": "Where Craft Meets Trust. Tamper-evident Digital Product Passports and live provenance verification platform for Indian handicrafts and artisans.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

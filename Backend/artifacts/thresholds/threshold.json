@@ -1,0 +1,36 @@
+{
+  "threshold": 0.867,
+  "recommended_threshold": 0.867,
+  "high_security_threshold": 0.867,
+  "equal_error_rate_threshold": 0.867,
+  "equal_error_rate": 0.0,
+  "roc_auc": 1.0,
+  "calibration_method": "max_f1_score_and_eer_optimization",
+  "model_version": "2.0.0",
+  "dataset_version": "1.0.0",
+  "timestamp": "2026-08-21T18:16:03.272533",
+  "status": "CALIBRATED",
+  "genuine_distribution": {
+    "count": 24,
+    "mean": 0.9808748502892003,
+    "std": 0.022842452010399313,
+    "median": 0.9897998229742366,
+    "min": 0.9124233531756727,
+    "max": 0.9999819746532146
+  },
+  "impostor_distribution": {
+    "count": 56,
+    "mean": 0.5344877218739835,
+    "std": 0.07937715508333479,
+    "median": 0.5223065504633296,
+    "min": 0.414780204444402,
+    "max": 0.8669115678373248
+  },
+  "metrics_at_recommended": {
+    "threshold": 0.867,
+    "far": 0.0,
+    "frr": 0.0,
+    "f1_score": 1.0,
+    "accuracy": 1.0
+  }
+}

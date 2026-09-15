@@ -1,0 +1,12 @@
+2026-08-21 18:17:05 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\registry_index.json
+2026-08-21 18:17:05 [INFO] src.cryptography.signing: Generating new 2048-bit RSA keypair...
+2026-08-21 18:17:05 [INFO] src.cryptography.signing: Saved RSA public key to: C:\Users\subha\Downloads\SIH Project\Kalakriti\keys\public_key.pem
+2026-08-21 18:17:05 [INFO] src.cryptography.signing: Saved RSA private key to: C:\Users\subha\Downloads\SIH Project\Kalakriti\keys\private_key.pem
+2026-08-21 18:17:05 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\Test image\20260820_133248.jpg (3060x4080)
+2026-08-21 18:17:10 [INFO] src.roi_detection: Selected ONE optimal ROI for P001:   Single ROI for P001 [VALID]: pos=(352,1312) size=256x256 quality_score=0.860 (sharpness=304.1, contrast=39.9, kps=284)
+2026-08-21 18:17:10 [INFO] src.feature_extraction: Generated fingerprint for P001 (1029 kps, v2.0.0)
+2026-08-21 18:17:10 [INFO] src.feature_extraction: Saved fingerprint: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\P001_fingerprint.npz
+2026-08-21 18:17:10 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\P001.json
+2026-08-21 18:17:10 [INFO] root: Saved JSON: C:\Users\subha\Downloads\SIH Project\Kalakriti\data/fingerprints\registry_index.json
+2026-08-21 18:17:10 [INFO] src.registry: Registered product 'P001' (Digital Manifest Hash: c560ab538a8a...).
+2026-08-21 18:17:10 [INFO] src.image_loader: Loaded image: C:\Users\subha\Downloads\SIH Project\Kalakriti\Test image\20260820_133248.jpg (3060x4080)

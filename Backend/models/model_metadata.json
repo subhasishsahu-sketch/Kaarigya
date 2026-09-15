@@ -1,0 +1,23 @@
+{
+  "model_type": "random_forest",
+  "feature_method": "ORB",
+  "n_estimators": 200,
+  "max_depth": 10,
+  "n_features": 8,
+  "feature_names": [
+    "ransac_inlier_ratio",
+    "reprojection_error",
+    "spatial_spread",
+    "avg_inlier_descriptor_distance",
+    "normalized_match_count",
+    "lbp_similarity",
+    "glcm_similarity",
+    "glcm_distance"
+  ],
+  "created_at": "2026-08-21T22:15:19.244602",
+  "decision_thresholds": {
+    "verification_threshold": 0.85,
+    "genuine_threshold": 0.85,
+    "suspicious_threshold": 0.6
+  }
+}

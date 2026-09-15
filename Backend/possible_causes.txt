@@ -1,0 +1,5 @@
+Possible Causes for "Backend Not Responding / 404 Not Found":
+
+1. Missing Root Route: The FastAPI backend in ml_api.py has endpoints under '/ml/*', but does not define a handler for the root path '/' (e.g., @app.get("/")).
+2. Incorrect Port/Host: Accessing the wrong port or host (though we verified it's running on port 8000).
+3. Incorrect Endpoint URL: Clients hitting '/' expect a status response or redirect instead of 404.
