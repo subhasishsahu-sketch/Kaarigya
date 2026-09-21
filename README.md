@@ -250,3 +250,14 @@ Kalakriti/
     ├── verify.py                    # CLI verification tool
     └── config/config.yaml           # ML configuration
 ```
+
+
+PRD — Product Requirements Document: every feature, every user action, expected behaviour
+TRD — Technical Requirements Document: tech stack, APIs, tools, architecture
+UI/UX Design Brief: colors, typography, components, screen structure
+Backend Schema: data storage, auth, tables, columns, relationships
+
+** For now we will not change our ui/ux
+
+Just added the workflow file for the smooth execution 
+DataBase.md is not refined just check the thing which is really necessery keep them and remove the rest columns and make another md file before feeding it ... hope it helps you (Ss)
