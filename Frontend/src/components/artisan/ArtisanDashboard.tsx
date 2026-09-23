@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../../context/AppContext';
+import { api } from '../../services/api';
 import { 
   Plus, 
   Package, 
@@ -27,7 +28,6 @@ export const ArtisanDashboard: React.FC = () => {
   const navigate = useNavigate();
   const { 
     currentArtisan, 
-    products, 
     t, 
     setIsQRScannerOpen,
     language 
@@ -35,13 +35,18 @@ export const ArtisanDashboard: React.FC = () => {
 
   const [isPrivacyOpen, setIsPrivacyOpen] = useState<boolean>(false);
   const [isLiveVerificationOpen, setIsLiveVerificationOpen] = useState<boolean>(false);
+  const [artisanProducts, setArtisanProducts] = useState<any[]>([]);
 
-  // Filter products by artisan strictly using ID, email, or exact name
-  const artisanProducts = products.filter(p => 
-    p.artisan.id === currentArtisan.id || 
-    (currentArtisan.email && p.artisan.email && p.artisan.email.toLowerCase() === currentArtisan.email.toLowerCase()) ||
-    (p.artisan.name.toLowerCase() === currentArtisan.name.toLowerCase())
-  );
+  useEffect(() => {
+    api.products.list().then(data => {
+      const filtered = data.filter((p: any) => 
+        p.artisanId === currentArtisan.id || 
+        (currentArtisan.email && p.artisan?.email && p.artisan.email.toLowerCase() === currentArtisan.email.toLowerCase()) ||
+        (p.artisan?.name && p.artisan.name.toLowerCase() === currentArtisan.name.toLowerCase())
+      );
+      setArtisanProducts(filtered);
+    }).catch(err => console.error("Failed to load products", err));
+  }, [currentArtisan]);
 
   const totalCount = currentArtisan.isNewProfile && artisanProducts.length === 0 
     ? 0 

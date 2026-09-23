@@ -476,41 +476,43 @@ export const ProductRegisterWizard: React.FC = () => {
       const cooperativeShare = Math.round(retailPrice * 0.15);
       const rawMaterialsLogistics = retailPrice - artisanCompensation - cooperativeShare;
 
-      const finalProductId = registeredBackendProduct?.productId;
+      const finalProductId = registeredBackendProduct?.productId || `CRAFT-${Date.now()}`;
       const primaryImg = evidenceList[0]?.url || 'https://images.unsplash.com/photo-1606744824163-985d376605aa?auto=format&fit=crop&w=800&q=80';
       const roiImg = overrideRoiUrl || capturedRoiImage || registeredBackendProduct?.fingerprintImageDataUrl || primaryImg;
 
-      const newPass = registerNewProduct({
-        name,
-        productId: finalProductId,
-        craftCategory,
-        productType,
-        description,
-        materials: selectedMaterials,
-        techniques: [selectedTechnique],
-        productionDuration,
-        price: {
-          retail: retailPrice,
-          artisanCompensation,
-          cooperativeShare,
-          rawMaterialsLogistics,
-          currency: 'INR'
-        },
-        creationLocation,
-        publicLocation,
-        locationConsistency: creationLocation ? 'consistent' : 'not_recorded',
-        primaryImage: primaryImg,
-        evidenceImages: evidenceList,
-        qrCodeUrl: registeredBackendProduct?.qrCodeDataUrl,
-        fingerprintImageDataUrl: roiImg,
-        processVideoUrl: processVideoUrl || undefined,
-        processVideoDuration: processVideoDuration || undefined,
-        processVideoStatus: processVideoUrl ? 'SUBMITTED' : undefined
-      });
+      const evidencePayload = evidenceList.map((e: any) => ({
+        fileUrl: e.url,
+        label: e.label,
+        evidenceType: e.category
+      }));
+      if (roiImg && !evidenceList.find((e: any) => e.url === roiImg)) {
+        evidencePayload.push({
+          fileUrl: roiImg,
+          label: 'ROI Fingerprint',
+          evidenceType: 'ROI'
+        });
+      }
 
-      setCreatedPassport(newPass);
+      const apiPayload = {
+        title: name,
+        craftType: craftCategory,
+        description,
+        originState: publicLocation?.state || 'Odisha',
+        originDistrict: publicLocation?.district || 'Puri',
+        dimensions: 'N/A',
+        weightGrams: 0,
+        materials: selectedMaterials.map(m => ({ name: m, percentage: 100 })),
+        technique: selectedTechnique,
+        image: primaryImg,
+        processVideoUrl,
+        evidence: evidencePayload
+      };
+
+      const productResult = await api.products.create(apiPayload);
+      
+      setCreatedPassport(productResult);
       setPhysicalStage('COMPLETE');
-      showNotification(`✓ Product [${finalProductId}] fully registered in database & RSA 2048-bit Digital Signature issued!`, 'success');
+      showNotification(`✓ Product [${productResult.productId}] fully registered in database!`, 'success');
     } catch (err: any) {
       console.error("Final registration error:", err);
       showNotification('Error committing final registration to database.', 'error');

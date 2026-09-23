@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useApp } from '../../context/AppContext';
+import { api } from '../../services/api';
 import { 
   Plus, 
   Search, 
@@ -13,15 +14,21 @@ import { VerificationStatusTag } from '../common/TrustBadge';
 import { SafeImage } from '../common/SafeImage';
 
 export const ArtisanProductList: React.FC = () => {
-  const { products, currentArtisan, navigate, t } = useApp();
+  const { currentArtisan, navigate, t } = useApp();
   const [filter, setFilter] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [artisanProducts, setArtisanProducts] = useState<any[]>([]);
 
-  const artisanProducts = products.filter(p => 
-    p.artisan.id === currentArtisan.id || 
-    (currentArtisan.email && p.artisan.email && p.artisan.email.toLowerCase() === currentArtisan.email.toLowerCase()) ||
-    (p.artisan.name.toLowerCase() === currentArtisan.name.toLowerCase())
-  );
+  useEffect(() => {
+    api.products.list().then(data => {
+      const filtered = data.filter((p: any) => 
+        p.artisanId === currentArtisan.id || 
+        (currentArtisan.email && p.artisan?.email && p.artisan.email.toLowerCase() === currentArtisan.email.toLowerCase()) ||
+        (p.artisan?.name && p.artisan.name.toLowerCase() === currentArtisan.name.toLowerCase())
+      );
+      setArtisanProducts(filtered);
+    }).catch(err => console.error("Failed to load products", err));
+  }, [currentArtisan]);
 
   const filtered = artisanProducts.filter(p => {
     if (filter !== 'all' && p.status !== filter) return false;

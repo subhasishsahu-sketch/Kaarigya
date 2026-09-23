@@ -1,5 +1,6 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import { ProductService } from './product.service';
+import { ProductPgService } from './product.pg.service';
 import { VerificationService } from '../verification/verification.service';
 import { extractStructuredCraftData } from '../ai/gemini.service';
 import { validate } from '../../middleware/validate';
@@ -7,14 +8,22 @@ import { createProductSchema, updateProductSchema, aiExtractSchema } from './pro
 import { requireAuth, requireRole } from '../../middleware/rbacGuard';
 import { sendSuccess, sendError } from '../../utils/responseEnvelope';
 import { db } from '../../config/supabase';
+import { getPool } from '../../config/db';
 import { ERROR_CODES } from '../../config/constants';
 
 export const productRouter = Router();
 
+/** Returns true when a real PostgreSQL pool is available */
+function isDbAvailable(): boolean {
+  try { return getPool() !== null; } catch { return false; }
+}
+
 // GET /api/products - List all products
 productRouter.get('/', async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const products = await ProductService.listProducts();
+    const products = isDbAvailable()
+      ? await ProductPgService.listProducts()
+      : await ProductService.listProducts();
     return sendSuccess(res, products);
   } catch (err) {
     next(err);
@@ -32,9 +41,9 @@ productRouter.post(
         const artisan = db.artisans.get(req.user.id);
         if (!artisan || artisan.verificationStatus !== 'VERIFIED' || !artisan.kalakritiArtisanId) {
           return sendError(
-            res, 
-            ERROR_CODES.FORBIDDEN, 
-            `Product registration is blocked. Artisan status is '${artisan?.verificationStatus || 'UNVERIFIED'}'. Cooperative/Guild approval and Kalakriti Artisan ID required.`, 
+            res,
+            ERROR_CODES.FORBIDDEN,
+            `Product registration is blocked. Artisan status is '${artisan?.verificationStatus || 'UNVERIFIED'}'. Cooperative/Guild approval and Kalakriti Artisan ID required.`,
             403
           );
         }
@@ -54,7 +63,9 @@ productRouter.post(
 // GET /api/products/lookup/:productId - Public lookup by 7-char ID or product code
 productRouter.get('/lookup/:productId', async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const product = await ProductService.getProductBy7CharId(req.params.productId);
+    const product = isDbAvailable()
+      ? await ProductPgService.lookupByCode(req.params.productId)
+      : await ProductService.getProductBy7CharId(req.params.productId);
     return sendSuccess(res, product);
   } catch (err) {
     next(err);
@@ -65,10 +76,14 @@ productRouter.get('/lookup/:productId', async (req: Request, res: Response, next
 productRouter.get('/:id', async (req: Request, res: Response, next: NextFunction) => {
   try {
     let product: any;
-    try {
-      product = await ProductService.getProductById(req.params.id, req.user);
-    } catch {
-      product = await ProductService.getProductBy7CharId(req.params.id);
+    if (isDbAvailable()) {
+      product = await ProductPgService.getProduct(req.params.id);
+    } else {
+      try {
+        product = await ProductService.getProductById(req.params.id, req.user);
+      } catch {
+        product = await ProductService.getProductBy7CharId(req.params.id);
+      }
     }
     return sendSuccess(res, product);
   } catch (err) {
@@ -84,7 +99,9 @@ productRouter.post(
   validate({ body: createProductSchema }),
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const product = await ProductService.createProduct(req.body, req.user!);
+      const product = isDbAvailable()
+        ? await ProductPgService.createProduct(req.body, req.user!)
+        : await ProductService.createProduct(req.body, req.user!);
       return sendSuccess(res, product, 201);
     } catch (err) {
       next(err);
@@ -113,7 +130,9 @@ productRouter.post(
   requireAuth,
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const evidence = await ProductService.addEvidence(req.params.id, req.body, req.user!);
+      const evidence = isDbAvailable()
+        ? await ProductPgService.addEvidence(req.params.id, req.body, req.user!)
+        : await ProductService.addEvidence(req.params.id, req.body, req.user!);
       return sendSuccess(res, evidence, 201);
     } catch (err) {
       next(err);
